@@ -5,19 +5,6 @@ Youtube comments are full of shit-tier scams, this filters them by looking at co
 # Contributing
 Feel free to submit pull-requests with more words included into the `forbiddenWords` array in content.js
 
-Currently it's only:
-
-```
-[
-    'financial advisor',
-    'personal finances',
-    'financial independence',
-    'trader',
-    'my investment decisions',
-    'Building wealth'
-]
-```
-
 # Install
 
 - Download/clone this package

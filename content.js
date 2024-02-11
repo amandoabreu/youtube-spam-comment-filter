@@ -2,11 +2,14 @@ let numCommentsRemoved = 0;
 function removeCommentsWithWords(words) {
     const comments = document.querySelectorAll('ytd-comment-thread-renderer');
     comments.forEach(comment => {
-        const commentText = comment.innerText.toLowerCase();
+        const commentText = comment.querySelector('#comment-content').innerText.toLowerCase();
+        const usernameElement = comment.querySelector('#header-author #author-text');
+        const username = usernameElement ? usernameElement.textContent.trim() : "Unknown User";
         words.forEach(word => {
             if (commentText.includes(word.toLowerCase())) {
                 comment.style.display = 'none';
-                console.log("Removed comment: "+commentText);
+                console.log(`Removed comment by ${username}`); // Limiting comment text to 50 chars for brevity
+                numCommentsRemoved++;
             }
         });
     });
@@ -18,7 +21,9 @@ const forbiddenWords = [
     'financial independence',
     'trader',
     'my investment decisions',
-    'Building wealth'
+    'building wealth',
+    'work with advisors',
+    'She goes by'
 ];
 removeCommentsWithWords(forbiddenWords);
 
