@@ -13,7 +13,8 @@ Currently it's only:
     'personal finances',
     'financial independence',
     'trader',
-    'my investment decisions'
+    'my investment decisions',
+    'Building wealth'
 ]
 ```
 

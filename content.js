@@ -17,7 +17,8 @@ const forbiddenWords = [
     'personal finances',
     'financial independence',
     'trader',
-    'my investment decisions'
+    'my investment decisions',
+    'Building wealth'
 ];
 removeCommentsWithWords(forbiddenWords);
 
