@@ -24,7 +24,8 @@ const forbiddenWords = [
     'building wealth',
     'work with advisors',
     'She goes by',
-    'Do you mind sharing info on the adviser'
+    'Do you mind sharing info on the adviser',
+    'licensed advisor'
 ];
 removeCommentsWithWords(forbiddenWords);
 
